@@ -1,0 +1,18 @@
+# Python compile cache and virtual environment
+**/__pycache__
+**/.venv
+
+# AWS CDK files
+**/package-log.json
+**/.cdk.staging
+**/cdk.out
+
+# AWS CDK app config filees
+aws-lambda/cdk-app/**/*config*.toml
+
+# Compressed data
+**/*.7z
+**/cloudtrail-logs/*.gz
+
+# (Neo)vim YCM configuration files
+**/.ycm_extra_conf.py

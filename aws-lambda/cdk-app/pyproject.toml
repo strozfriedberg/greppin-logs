@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "greppin-logs.cdk-app"
+version = "0.1.0"
+description = "Grep logs in AWS with S3 and Lambdas"
+authors = ["Noah Rubin <noah.rubin@strozfriedberg.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{ include = "cdk_app" }]
+include = ["app.py", "cdk.json"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: JavaScript",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+"aws-cdk.aws-s3" = "1.112.0"
+"aws-cdk.aws-s3-notifications" = "1.112.0"
+"aws-cdk.aws-lambda" = "1.112.0"
+"aws-cdk.core" = "1.112.0"
+toml = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

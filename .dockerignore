@@ -1,0 +1,7 @@
+# Python compile cache and virtual environment
+**/__pycache__
+**/.venv
+
+# Compressed data
+**/*.7z
+**/cloudtrail-logs/*.gz
