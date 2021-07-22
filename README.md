@@ -14,9 +14,9 @@ purpose-built tools for handling structured tabular and JSON data, Stroz Friedbe
 ### Command Line Examples
 
 The [command-line](command-line/) directory contains shell scripts (`.sh` files) with the commands from each CLI tool example from the presentation,
-as well as a [Dockerfile](command-line/Dockerfile) containing the tools used in the presentation.
+as well as a [Dockerfile](command-line/Dockerfile) containing the tools used in the presentation (including Lightgrep).
 To build the Docker image with the tag `greppin-logs:latest`, make sure [Docker is installed](https://docs.docker.com/engine/install/)
-and run the following command from the root of the repo:
+and run the following command from the _root of the repo_:
 
 ```bash
 docker build -f command-line/Dockerfile -t greppin-logs:latest .

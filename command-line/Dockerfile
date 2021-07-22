@@ -58,4 +58,8 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD5
     Rscript -e 'install.packages(c("devtools", "tidyverse"))' && \
     Rscript -e 'devtools::install_github("jeroenjanssens/rush")'
 
+# Install lightgrep CLI
+COPY lightgrep-cli/linux/lightgrep /opt/tools/lightgrep/lightgrep
+RUN ln -s /opt/tools/lightgrep/lightgrep /opt/tools/bin/lightgrep
+
 WORKDIR /workspaces
